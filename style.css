@@ -125,6 +125,33 @@
         flex-direction: column;
     }
 
+
+    .skill {
+        animation: slide 1s ease-in-out;
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translateY(500px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    /* #Home {
+        animation: slidee 1s ease-in-out;
+    }
+
+    @keyframes slidee {
+        0% {
+            transform: translateX(500px);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    } */
+
     main > .text {
         padding: 10px;
         border-radius: 15px;
