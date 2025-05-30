@@ -128,29 +128,43 @@
 
 
     .skillup {
-        animation: slide 1s ease-in-out;
+        animation: slide 1.2s ease-in-out;
     }
 
     @keyframes slide {
         0% {
             transform: translateY(900px);
+            opacity: 0;
         }
+
+        50% {
+            opacity: 0.5;
+        }
+
         100% {
             transform: translateY(0);
+            opacity: 1;
         }
     }
 
 
     .skilldown {
-        animation: slidee 1s ease-in-out;
+        animation: slidee 1.2s ease-in-out;
     }
 
     @keyframes slidee {
         0% {
             transform: translateY(0px);
+            opacity: 1;
         }
+
+        50% {
+            opacity: 0.5;
+        }
+
         100% {
             transform: translateY(900px);
+            opacity: 0;
         }
     }
 
