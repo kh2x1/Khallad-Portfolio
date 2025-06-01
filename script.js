@@ -150,8 +150,115 @@ window.addEventListener("scroll", () => {
 
 
 
-// div.addEventListener("mouseout", () => {
-//     topLine.classList.remove("moveTop");
-//     middle.classList.remove("moveMid");
-//     bottom.classList.remove("hide");
-//   });
+
+
+
+
+if (matchMedia("(min-width: 1280px)").matches) {
+  window.addEventListener("scroll", () => {
+  
+    if (window.scrollY >=  300) {
+      skills.classList.add("skillup");
+      skills.classList.remove("skilldown");
+      skills.style.visibility = "visible";
+      skills.style.transition = "all 0.3s ease-in-out";
+  
+      
+  
+      // let scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+      // let scrollPosition = window.scrollY;
+      // if (scrollPosition == 300) {
+      //   console.log("1");
+      // }
+    }
+  
+    if (window.scrollY < 200) {
+      skills.classList.remove("skillup");
+      skills.classList.add("skilldown");
+      skills.style.visibility = "hidden";
+      skills.style.transition = "all 0.3s ease-in-out";
+    }
+  });
+  
+  
+  
+  
+  window.addEventListener("scroll", () => {
+    
+    if (window.scrollY >=  900) {
+      experience.classList.add("skillup");
+      experience.classList.remove("skilldown");
+      experience.style.visibility = "visible";
+      experience.style.transition = "all 0.3s ease-in-out";
+  
+      
+  
+      // let scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+      // let scrollPosition = window.scrollY;
+      // if (scrollPosition == 900) {
+      //   console.log("2");
+      // }
+    }
+  
+    if (window.scrollY < 300) {
+      experience.classList.remove("skillup");
+      experience.classList.add("skilldown");
+      experience.style.visibility = "hidden";
+      experience.style.transition = "all 0.3s ease-in-out";
+    }
+  });
+  
+  
+  
+  
+  window.addEventListener("scroll", () => {
+    
+    if (window.scrollY >=  1800) {
+      education.classList.add("skillup");
+      education.classList.remove("skilldown");
+      education.style.visibility = "visible";
+      education.style.transition = "all 0.3s ease-in-out";
+  
+      
+  
+      // let scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+      // let scrollPosition = window.scrollY;
+      // if (scrollPosition == 1800) {
+      //   console.log("3");
+      // }
+    }
+  
+    if (window.scrollY < 900) {
+      education.classList.remove("skillup");
+      education.classList.add("skilldown");
+      education.style.visibility = "hidden";
+      education.style.transition = "all 0.3s ease-in-out";
+    }
+  });
+  
+  
+  
+  
+  window.addEventListener("scroll", () => {
+    
+    if (window.scrollY >=  3000) {
+      projects.classList.add("skillup");
+      projects.classList.remove("skilldown");
+      projects.style.visibility = "visible";
+      projects.style.transition = "all 0.3s ease-in-out";
+  
+      // let scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+      // let scrollPosition = window.scrollY;
+      // if (scrollPosition == 3000) {
+      //   console.log("4");
+      // }
+    }
+  
+    if (window.scrollY < 1800) {
+      projects.classList.remove("skillup");
+      projects.classList.add("skilldown");
+      projects.style.visibility = "hidden";
+      projects.style.transition = "all 0.3s ease-in-out";
+    }
+  });
+}
