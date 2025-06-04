@@ -41,6 +41,7 @@ div.addEventListener("click", () => {
 });
 
 
+
 window.addEventListener("scroll", () => {
   
   if (window.scrollY >=  300) {

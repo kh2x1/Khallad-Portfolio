@@ -109,7 +109,6 @@
         flex-direction: column;
         align-items: center;
         gap: 20px;
-        margin-top: 100px;
     }
     
     main {
@@ -156,6 +155,8 @@
 
     #Home {
         animation: popup 1s ease-in-out;
+        margin-top: 100px;
+
     }
 
     @keyframes popup {
@@ -166,6 +167,8 @@
             transform: scale(1);
         }
     }
+
+    
 
     /* #Home {
         animation: slidee 1s ease-in-out;
@@ -504,9 +507,66 @@
         }
     }
 
-    footer {
-        text-align: center;
+    .contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+        gap: 10px;
         padding: 10px;
+    }
+
+    div > a {
+        padding: 10px;
+        margin: 10px;
+        width: fit-content;
+        height: fit-content;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    div > .X {
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        color: white;
+        font-size: larger;
+        font-weight: 600;
+    }
+
+    div > .X:hover,
+    div > .Linkedin:hover {
+        transform: scale(1.4);
+        transition: all 0.1s ease-in-out;
+    }
+
+    div > .Linkedin {
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        color: white;
+        font-size: larger;
+        font-weight: 600;
+    }
+
+
+    footer {
+        background-color: rgb(0, 110, 255);
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        border-radius: 20px;
+        box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.329);
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
     }
 
    
@@ -541,8 +601,8 @@
         margin: 10px;
         position: fixed;
         top: 0;
-        left: 120px;
-        right: 120px;
+        left: 90px;
+        right: 90px;
         z-index: 9999;
         transition: all 0.2s ease-in-out;
         direction: rtl;
@@ -583,13 +643,12 @@
         text-decoration: none;
         color: rgb(255, 255, 255);
         font-weight: bolder;
-        font-size: 24px;
+        font-size: 20px;
         min-width: 32px;
         min-height: 32px;
         line-height: 32px;
         text-align: center;
         transition: all 0.2s ease-in-out;
-
     }
 
     header > .side-menu > nav > ul > li > a:hover {
@@ -616,11 +675,12 @@
         flex-direction: column;
         align-items: center;
         gap: 20px;
-        margin-top: 150px;
+
     }
 
     #Home {
         animation: popup 1s ease-in-out;
+        margin-top: 100px;
     }
 
     @keyframes popup {
@@ -1071,9 +1131,69 @@
         }
     }
 
-    footer {
-        text-align: center;
+    .Contact {
+    }
+
+    .contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+        gap: 10px;
         padding: 10px;
+    }
+
+    div > button {
+        padding: 10px;
+        margin: 10px;
+        width: fit-content;
+        height: fit-content;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    div > .X {
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        color: white;
+        font-size: larger;
+        font-weight: 600;
+    }
+
+    div > .X:hover,
+    div > .Linkedin:hover {
+        transform: scale(1.4);
+        transition: all 0.1s ease-in-out;
+    }
+
+    div > .Linkedin {
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        color: white;
+        font-size: larger;
+        font-weight: 600;
+    }
+
+
+    footer {
+        background-color: rgb(0, 110, 255);
+        text-align: center;
+        width: 90%;
+        margin: 0;
+        border-radius: 20px;
+        box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.329);
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
     }
 
 }
