@@ -6,6 +6,8 @@
     <meta name="description" content="Khallad Portfolio">
     <link rel="stylesheet" href="style.css">
     <link rel="preload" as="image" href="me2-removebg-preview.webp">
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
     <title>Khallad Portfolio</title>
 </head>
 <body>
@@ -27,6 +29,7 @@
             <li><a href="#Education">Education</a></li>
             <li><a href="#Projects">Project</a></li>
             <li class="Contact"><a href="#Contact">Contact</a></li>
+            <!-- <li><img src="night-mode.png" alt="night-mode" id="night-mode"></li> -->
         </ul>
     </nav>
 
@@ -54,11 +57,11 @@
             <h1 class="title">Technical Skills</h1>
         </div>
         <div class="icons">
-            <img src="icons8-html.svg" alt="HTML" loading="lazy" width="70px" height="70px">
-            <img src="icons8-css.svg" alt="CSS" loading="lazy" width="70px" height="70px">
-            <img src="icons8-js.svg" alt="JavaScript" loading="lazy" width="70px" height="70px">
-            <img src="php3-svgrepo-com.svg" alt="PHP" loading="lazy" width="70px" height="70px">
-            <img src="icons8-visual-studio-code.svg" alt="VS" loading="lazy" width="70px" height="70px">
+            <img src="icons8-html.svg" alt="HTML" loading="lazy" width="70px" height="70px" class="html">
+            <img src="icons8-css.svg" alt="CSS" loading="lazy" width="70px" height="70px" class="css">
+            <img src="icons8-js.svg" alt="JavaScript" loading="lazy" width="70px" height="70px" class="js">
+            <img src="php3-svgrepo-com.svg" alt="PHP" loading="lazy" width="70px" height="70px" class="php">
+            <img src="icons8-visual-studio-code.svg" alt="VS" loading="lazy" width="70px" height="70px" class="vs">
         </div>
         
     </main>
@@ -219,5 +222,12 @@
     
 
     <script src="script.js"></script>
+
+    <script>
+        function addDarkmodeWidget() {
+           new Darkmode().showWidget();
+         }
+         window.addEventListener('load', addDarkmodeWidget);
+       </script>
 </body>
 </html>

@@ -1,4 +1,10 @@
 let bd = document.querySelector("body");
+let contioner = document.querySelector(".container");
+let main = document.querySelector("main");
+
+
+let p = document.querySelector("p");
+let span = document.querySelector("span");
 
 let div = document.querySelector(".line");
 let topLine = document.getElementById("top");
@@ -15,7 +21,7 @@ let experience = document.getElementById("Experience");
 let education = document.getElementById("Education");
 let projects = document.getElementById("Projects");
 
-
+let mode = document.getElementById("night-mode");
 
 div.addEventListener("click", () => {
   div.classList.toggle("open");
@@ -26,7 +32,7 @@ div.addEventListener("click", () => {
 
   if(div.classList.contains("open") && matchMedia("(max-width: 430px)").matches){ 
     header.style.height = "30dvh";
-    ul.style.height = "24dvh";
+    ul.style.height = "22dvh";
     ul.style.transition = "all 0.3s ease-in-out";
     header.style.transition = "all 0.3s ease-in-out";
     nav.style.display = "block";
@@ -44,7 +50,7 @@ div.addEventListener("click", () => {
 
 window.addEventListener("scroll", () => {
   
-  if (window.scrollY >=  400) {
+  if (window.scrollY >=  300) {
     skills.classList.add("skillup");
     skills.classList.remove("skilldown");
     skills.style.visibility = "visible";
@@ -59,7 +65,7 @@ window.addEventListener("scroll", () => {
     // }
   }
 
-  if (window.scrollY < 300) {
+  if (window.scrollY < 200) {
     skills.classList.remove("skillup");
     skills.classList.add("skilldown");
     skills.style.visibility = "hidden";
@@ -72,7 +78,7 @@ window.addEventListener("scroll", () => {
 
 window.addEventListener("scroll", () => {
   
-  if (window.scrollY >=  700) {
+  if (window.scrollY >=  600) {
     experience.classList.add("skillup");
     experience.classList.remove("skilldown");
     experience.style.visibility = "visible";
@@ -87,7 +93,7 @@ window.addEventListener("scroll", () => {
     // }
   }
 
-  if (window.scrollY < 500) {
+  if (window.scrollY < 300) {
     experience.classList.remove("skillup");
     experience.classList.add("skilldown");
     experience.style.visibility = "hidden";
@@ -100,7 +106,7 @@ window.addEventListener("scroll", () => {
 
 window.addEventListener("scroll", () => {
   
-  if (window.scrollY >=  1000) {
+  if (window.scrollY >=  900) {
     education.classList.add("skillup");
     education.classList.remove("skilldown");
     education.style.visibility = "visible";
@@ -115,7 +121,7 @@ window.addEventListener("scroll", () => {
     // }
   }
 
-  if (window.scrollY < 800) {
+  if (window.scrollY < 600) {
     education.classList.remove("skillup");
     education.classList.add("skilldown");
     education.style.visibility = "hidden";
@@ -128,7 +134,7 @@ window.addEventListener("scroll", () => {
 
 window.addEventListener("scroll", () => {
   
-  if (window.scrollY >=  1300) {
+  if (window.scrollY >=  1200) {
     projects.classList.add("skillup");
     projects.classList.remove("skilldown");
     projects.style.visibility = "visible";
@@ -140,7 +146,7 @@ window.addEventListener("scroll", () => {
     // }
   }
 
-  if (window.scrollY < 1100) {
+  if (window.scrollY < 900) {
     projects.classList.remove("skillup");
     projects.classList.add("skilldown");
     projects.style.visibility = "hidden";
