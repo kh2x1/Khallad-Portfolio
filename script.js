@@ -1,3 +1,8 @@
+window.onload = () => {
+  window.scrollTo(0, 0);
+}
+
+
 let bd = document.querySelector("body");
 let contioner = document.querySelector(".container");
 let main = document.querySelector("main");
@@ -31,15 +36,14 @@ div.addEventListener("click", () => {
 
 
   if(div.classList.contains("open") && matchMedia("(max-width: 430px)").matches){ 
-    header.style.height = "30dvh";
-    ul.style.height = "22dvh";
+    header.style.height = "40dvh";
     ul.style.transition = "all 0.3s ease-in-out";
     header.style.transition = "all 0.3s ease-in-out";
     nav.style.display = "block";
 
   } else {
-    header.style.height = "9dvh";
-    ul.style.height = "0";
+    header.style.height = "7dvh";
+    ul.style.height = "0px";
     ul.style.transition = "all 0.3s ease-in-out";
     header.style.transition = "all 0.3s ease-in-out";
     nav.style.display = "none";

@@ -1,4 +1,4 @@
-@media only screen and (max-width: 430px) {
+@media screen and (max-width: 430px) {
 
     html {
         scroll-behavior: smooth;
@@ -15,7 +15,7 @@
       
 
     header {
-        background-color: rgb(0, 110, 255);
+        background-image: linear-gradient(to right, rgb(0, 110, 255), rgb(0, 68, 255));
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -55,12 +55,12 @@
         transition: all 0.2s ease-in-out;
     }
 
-    header > .side-menu > nav > ul  {
+    header > .side-menu > nav > ul {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        gap: 12px;
+        gap: 22px;
         padding: 10px;
         transition: all 0.2s ease-in-out;
     }
@@ -70,16 +70,22 @@
         align-items: center;
         justify-content: flex-start;
         list-style: none;
+        padding: 5px;
         transition: all 0.2s ease-in-out;
         width: 100%;
-    }
+        }
 
     header > .side-menu > nav > ul > li > a {
         text-decoration: none;
         color: white;
-        font-size: 16px;
-        border-radius: 10px;
+        font-size: 19px;
         font-weight: 700;
+        transition: all 0.2s ease-in-out;
+    }
+
+    header > .side-menu > nav > ul > li > a:focus {
+        border-bottom: 5px solid white;
+        padding: 5px;
         transition: all 0.2s ease-in-out;
     }
 
@@ -462,7 +468,7 @@
         border-radius: 10px;
         min-height: 44px;
         min-width: 44px;
-        background-color: rgb(0, 82, 184);
+        background-image: linear-gradient(to right, rgb(0, 110, 255), rgb(0, 68, 255));
         cursor: pointer;
         display: flex;
         align-items: center;
@@ -559,7 +565,7 @@
 
 
     footer {
-        background-color: rgb(0, 110, 255);
+        background-image: linear-gradient(to right, rgb(0, 110, 255), rgb(0, 68, 255));
         text-align: center;
         width: 100%;
         margin: 0;
@@ -686,7 +692,8 @@
     }
 
     header {
-        background-color: rgb(0, 110, 255);
+        /* background-color: rgb(0, 110, 255); */
+        background-image: linear-gradient(to right, rgb(0, 110, 255), rgb(0, 68, 255));
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -1186,7 +1193,7 @@
         border-radius: 10px;
         min-height: 44px;
         min-width: 44px;
-        background-color: rgb(0, 82, 184);
+        background-image: linear-gradient(to right, rgb(0, 110, 255), rgb(0, 68, 255));
         cursor: pointer;
         display: flex;
         align-items: center;
@@ -1286,7 +1293,7 @@
 
 
     footer {
-        background-color: rgb(0, 110, 255);
+        background-image: linear-gradient(to right, rgb(0, 110, 255), rgb(0, 68, 255));
         text-align: center;
         width: 90%;
         margin: 0;
@@ -1394,9 +1401,6 @@
         
     }
 
-
-
-   
    
 }
 
