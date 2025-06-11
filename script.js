@@ -36,7 +36,8 @@ div.addEventListener("click", () => {
 
 
   if(div.classList.contains("open") && matchMedia("(max-width: 430px)").matches){ 
-    header.style.height = "40dvh";
+    header.style.height = "50dvh";
+    ul.style.height = "100%";
     ul.style.transition = "all 0.3s ease-in-out";
     header.style.transition = "all 0.3s ease-in-out";
     nav.style.display = "block";

@@ -1,12 +1,14 @@
 @media screen and (max-width: 430px) {
-
+    * {
+        box-sizing: border-box;
+    }
+    
     html {
         scroll-behavior: smooth;
     }
 
 
     body {
-        box-sizing: border-box;
         margin: 0;
         padding: 0;
         background-color: whitesmoke;
@@ -78,7 +80,7 @@
     header > .side-menu > nav > ul > li > a {
         text-decoration: none;
         color: white;
-        font-size: 19px;
+        font-size: 1.2rem;
         font-weight: 700;
         transition: all 0.2s ease-in-out;
     }
