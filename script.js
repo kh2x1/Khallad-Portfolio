@@ -40,6 +40,8 @@ div.addEventListener("click", () => {
     ul.style.transition = "all 0.3s ease-in-out";
     header.style.transition = "all 0.3s ease-in-out";
     nav.style.display = "block";
+    contioner.style.filter = "blur(10px)";
+    contioner.style.transition = "all 0.4s ease-in-out";
 
   } else {
     header.style.height = "8dvh";
@@ -47,6 +49,8 @@ div.addEventListener("click", () => {
     ul.style.transition = "all 0.3s ease-in-out";
     header.style.transition = "all 0.3s ease-in-out";
     nav.style.display = "none";
+    contioner.style.filter = "blur(0px)";
+    contioner.style.transition = "all 0.4s ease-in-out";
   }
 });
 
