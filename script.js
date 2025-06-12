@@ -7,7 +7,6 @@ let bd = document.querySelector("body");
 let contioner = document.querySelector(".container");
 let main = document.querySelector("main");
 
-
 let p = document.querySelector("p");
 let span = document.querySelector("span");
 
@@ -36,14 +35,14 @@ div.addEventListener("click", () => {
 
 
   if(div.classList.contains("open") && matchMedia("(max-width: 430px)").matches){ 
-    header.style.height = "50dvh";
+    header.style.height = "70dvh";
     ul.style.height = "100%";
     ul.style.transition = "all 0.3s ease-in-out";
     header.style.transition = "all 0.3s ease-in-out";
     nav.style.display = "block";
 
   } else {
-    header.style.height = "7dvh";
+    header.style.height = "8dvh";
     ul.style.height = "0px";
     ul.style.transition = "all 0.3s ease-in-out";
     header.style.transition = "all 0.3s ease-in-out";

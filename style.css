@@ -2,7 +2,7 @@
     * {
         box-sizing: border-box;
     }
-    
+
     html {
         scroll-behavior: smooth;
     }
@@ -22,7 +22,7 @@
         align-items: center;
         justify-content: flex-start;
         gap: 0px;
-        /* height: 9dvh; */
+        height: 8dvh;
         border-radius: 20px;
         margin: 10px;
         position: fixed;
